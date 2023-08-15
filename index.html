@@ -537,7 +537,7 @@
             </div>
           </div>
 
-          <div class="modal__form__label-wrapper">
+          <div class="modal__form__textarea-wrapper">
             <label class="modal__form__label" for="user-comment">Comment</label
             ><textarea
               name="user-comment"
@@ -546,40 +546,41 @@
               id="user-comment"
             ></textarea>
           </div>
+
+          <div class="modal__form__checkbox-wrapper">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              class="modal__form__input-checkbox visually-hidden"
+              id="user-privacy"
+            />
+
+            <label class="modal__form__label-checkbox" for="user-privacy"
+              ><span class="modal__form__label-checkbox__text"
+                >I accept the terms and conditions of the
+
+                <svg
+                  width="10"
+                  height="8"
+                  class="modal__form__label-checkbox__icon"
+                >
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              <a href="" class="modal__form__label-checkbox__link"
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+
+          <div class="modal__form__btn-container">
+            <button type="submit" class="modal__form__btn">
+              <span class="modal__form__btn-text">Send</span>
+            </button>
+          </div>
         </form>
 
-        <div class="modal__form__checkbox-wrapper">
-          <input
-            type="checkbox"
-            name="user-privacy"
-            value="true"
-            class="modal__form__input-checkbox visually-hidden"
-            id="user-privacy"
-          />
-
-          <label class="modal__form__label-checkbox" for="user-privacy"
-            ><span class="modal__form__label-checkbox__text"
-              >I accept the terms and conditions of the
-
-              <svg
-                width="10"
-                height="8"
-                class="modal__form__label-checkbox__icon"
-              >
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>
-            <a href="" class="modal__form__label-checkbox__link"
-              >Privacy Policy</a
-            ></label
-          >
-        </div>
-
-        <div class="modal__form__btn-container">
-          <button type="submit" class="modal__form__btn">
-            <span class="modal__form__btn-text">Send</span>
-          </button>
-        </div>
         <!-- </div> -->
       </div>
     </div>
