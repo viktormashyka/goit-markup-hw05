@@ -845,6 +845,10 @@ textarea {
 }
 
 .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   position: absolute;
   left: 50%;
   top: 50%;
@@ -898,17 +902,16 @@ textarea {
 }
 
 .modal__wrapper {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  /* padding: 72px 24px 24px 24px; */
+  justify-content: flex-start; */
 }
 
-.modal__wrapper:focus-within {
+/* .modal__wrapper:focus-within {
   border-color: var(--iris);
-}
+} */
 
-.modal__wrapper__title {
+.modal__title {
   color: var(--navyblue, #2e2f42);
   text-align: center;
 
