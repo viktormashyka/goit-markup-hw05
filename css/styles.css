@@ -1006,7 +1006,7 @@ textarea {
 }
 
 .modal__form__input-checkbox {
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .modal__form__input-checkbox:checked
