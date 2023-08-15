@@ -893,9 +893,7 @@ textarea {
   display: flex;
   flex-direction: column;
   max-width: 360px;
-  /* gap: 8px; */
   align-items: center;
-  /* margin-bottom: 16px; */
 }
 
 .modal__form__label-wrapper {
@@ -1003,41 +1001,45 @@ textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+
+  padding-left: 24px;
 }
 
 .modal__form__input-checkbox {
   margin-right: 8px;
 }
 
-.modal__form__input-checkbox:checked .modal__form__label-checkbox__text {
+.modal__form__input-checkbox:checked
+  .modal__form__label-checkbox__icon-wrapper {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
 }
 
-.modal__form__label-checkbox__text {
+.modal__form__label-checkbox__icon-wrapper {
   width: 16px;
   height: 16px;
-  /* display: inline-flex; */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  /* background-color: red; */
+
   transition: background-color var(--transition-main),
     border var(--transition-main), fill var(--transition-main);
-}
 
-.modal__form__label-checkbox__icon {
-  /*  */
   position: absolute;
   top: 50%;
   left: 0;
-  fill: var(--navyblue);
   transform: translateY(-50%);
 
   transition: fill var(--transition-main);
+}
+
+.modal__form__label-checkbox__icon {
 }
 
 .modal__form__label-checkbox__link {
