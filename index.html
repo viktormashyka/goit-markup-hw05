@@ -451,22 +451,27 @@
           </ul>
         </div>
         <div class="footer__subscribe">
-          <label for="footer__subscribe__input" class="footer__subscribe__label"
-            >Subscribe
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              id="footer__subscribe__input"
-              class="footer__input"
-            />
-          </label>
-          <button type="submit" class="footer__subscribe__btn">
-            <span class="footer__subscribe__btn-text">Subscribe</span>
-            <svg width="24" height="24" class="footer__subscribe__btn-icon">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <p class="footer__subscribe__title">Subscribe</p>
+          <div class="footer__subscribe__form">
+            <label
+              for="footer__subscribe__input"
+              class="footer__subscribe__label"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="footer__subscribe__input"
+                class="footer__subscribe__input"
+              />
+            </label>
+            <button type="submit" class="footer__subscribe__btn">
+              Subscribe
+              <svg width="24" height="24" class="footer__subscribe__btn-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
@@ -481,73 +486,91 @@
           </svg>
         </button>
 
-        <form class="modal__form">
-          <h1 class="modal__form__title">
+        <div class="modal__wrapper">
+          <p class="modal__wrapper__title">
             Leave your contacts and we will call you back
-          </h1>
-          <div class="modal__form__inputs">
-            <label class="modal__form__label"
-              >Name
-              <div class="modal__form__input-container">
+          </p>
+          <form class="modal__form">
+            <div class="modal__form__label-wrapper">
+              <label class="modal__form__label" for="user-name">Name</label>
+              <div class="modal__form__input-wrapper">
                 <input
                   type="text"
-                  name="user_name"
+                  name="user-name"
                   class="modal__form__input"
+                  id="user-name"
                   autofocus
                 />
-                <svg width="18" height="18" class="modal__form__input-icon">
+                <svg width="18" height="24" class="modal__form__input-icon">
                   <use href="./images/icons.svg#icon-person-black-18dp"></use>
                 </svg>
               </div>
-            </label>
-            <label class="modal__form__label"
-              >Phone
-              <div class="modal__form__input-container">
+            </div>
+
+            <div class="modal__form__label-wrapper">
+              <label class="modal__form__label" for="user-phone">Phone</label>
+              <div class="modal__form__input-wrapper">
                 <input
                   type="tel"
-                  name="user_phone"
+                  name="user-phone"
                   class="modal__form__input"
+                  id="user-phone"
                 />
-                <svg width="18" height="18" class="modal__form__input-icon">
+                <svg width="18" height="24" class="modal__form__input-icon">
                   <use href="./images/icons.svg#icon-phone-black-18dp"></use>
                 </svg>
               </div>
-            </label>
-            <label class="modal__form__label"
-              >Email
-              <div class="modal__form__input-container">
+            </div>
+
+            <div class="modal__form__label-wrapper">
+              <label class="modal__form__label" for="user-email">Email</label>
+              <div class="modal__form__input-wrapper">
                 <input
                   type="email"
-                  name="user_email"
+                  name="user-email"
                   class="modal__form__input"
                 />
-                <svg width="18" height="18" class="modal__form__input-icon">
+                <svg width="18" height="24" class="modal__form__input-icon">
                   <use href="./images/icons.svg#icon-email-black-18dp"></use>
                 </svg>
               </div>
-            </label>
-            <label class="modal__form__label"
-              >Comment<textarea
-                rows="10"
-                name="user_comment"
-                class="modal__form__input"
-                placeholder="Text input"
-              ></textarea>
-            </label>
-          </div>
+            </div>
 
-          <div class="modal__form__checkbox-container">
-            <label class="modal__form__label-checkbox">
-              <input
-                type="checkbox"
-                name="accept_terms"
-                value="accept_terms"
-                class="modal__form__input-checkbox"
-              /><span modal__form__input-checkbox__text
-                >I accept the terms and conditions of the</span
-              >
-              <a href="" class="modal__form__link">Privacy Policy</a>
-            </label>
+            <div class="modal__form__label-wrapper">
+              <label class="modal__form__label" for="user-comment"
+                >Comment</label
+              ><textarea
+                name="user-comment"
+                class="modal__form__textarea"
+                placeholder="Text input"
+                id="user-comment"
+              ></textarea>
+            </div>
+          </form>
+
+          <div class="modal__form__checkbox-wrapper">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              class="modal__form__input-checkbox visually-hidden"
+              id="user-privacy"
+            />
+
+            <label class="modal__form__label-checkbox" for="user-privacy"
+              ><span class="modal__form__label-checkbox__text"
+                >I accept the terms and conditions of the
+
+                <svg
+                  width="10"
+                  height="8"
+                  class="modal__form__label-checkbox__icon"
+                >
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              <a href="" class="modal__form__label-checkbox__link">Privacy Policy</a></label
+            >
           </div>
 
           <div class="modal__form__btn-container">
@@ -555,7 +578,7 @@
               <span class="modal__form__btn-text">Send</span>
             </button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
