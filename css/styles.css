@@ -934,18 +934,12 @@ textarea {
   padding-left: 38px;
 }
 
-.modal__form__input:hover,
 .modal__form__input:focus {
   border-color: var(--iris);
 }
 
 .modal__form__input:focus .modal__form__input-icon {
   fill: var(--iris);
-}
-
-.modal__form__input:placeholder-shown,
-.modal__form__input:placeholder-shown {
-  border-color: var(--iris);
 }
 
 .modal__form__input-icon {
@@ -1006,7 +1000,6 @@ textarea {
 }
 
 .modal__form__input-checkbox {
-  /* margin-right: 8px; */
 }
 
 .modal__form__input-checkbox:checked
@@ -1026,7 +1019,6 @@ textarea {
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  /* background-color: red; */
 
   transition: background-color var(--transition-main),
     border var(--transition-main), fill var(--transition-main);
