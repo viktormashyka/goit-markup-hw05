@@ -999,6 +999,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 16px;
+  fill: var(--navyblue);
   transform: translateY(-50%);
 
   /* fill: var(--navyblue); */
@@ -1051,7 +1052,9 @@ textarea {
   margin-right: 8px;
 }
 
-.modal__form__input-checkbox:checked .modal__form__label-checkbox__icon {
+.modal__form__input-checkbox:checked .modal__form__label-checkbox__text {
+  background-color: var(--ocean);
+  border: none;
   fill: var(--cloud);
 }
 
@@ -1076,10 +1079,10 @@ textarea {
   color: var(--iris);
 }
 
-.modal__form__btn-container {
+/* .modal__form__btn-container {
   display: flex;
   justify-content: center;
-}
+} */
 
 .modal__form__btn {
   display: block;
