@@ -938,7 +938,7 @@ textarea {
   border-color: var(--iris);
 }
 
-.modal__form__input:focus .modal__form__input-icon {
+.modal__form__input:focus + .modal__form__input-icon {
   fill: var(--iris);
 }
 
@@ -983,9 +983,7 @@ textarea {
 }
 
 .modal__form__checkbox-wrapper {
-  display: flex;
   margin-bottom: 24px;
-  position: relative;
 }
 
 .modal__form__label-checkbox {
@@ -995,26 +993,27 @@ textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-
-  padding-left: 24px;
 }
 
 .modal__form__input-checkbox {
 }
 
 .modal__form__input-checkbox:checked
-  .modal__form__label-checkbox__icon-wrapper {
+  + .modal__form__label-checkbox
+  > .modal__form__label-checkbox__icon-wrapper {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
+  border-color: var(--ocean);
 }
 
 .modal__form__label-checkbox__icon-wrapper {
-  width: 16px;
-  height: 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 16px;
+  height: 16px;
+
   fill: transparent;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1022,11 +1021,6 @@ textarea {
 
   transition: background-color var(--transition-main),
     border var(--transition-main), fill var(--transition-main);
-
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
 
   transition: fill var(--transition-main);
 }
