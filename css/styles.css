@@ -1021,8 +1021,6 @@ textarea {
 
   transition: background-color var(--transition-main),
     border var(--transition-main), fill var(--transition-main);
-
-  transition: fill var(--transition-main);
 }
 
 .modal__form__label-checkbox__icon {
