@@ -1003,7 +1003,14 @@ textarea {
   > .modal__form__label-checkbox__icon-wrapper {
   background-color: var(--ocean);
   border: none;
-  fill: var(--cloud);
+  stroke: var(--cloud);
+
+  border-color: var(--ocean);
+}
+
+.modal__form__input-checkbox:focus
+  + .modal__form__label-checkbox
+  > .modal__form__label-checkbox__icon-wrapper {
   border-color: var(--ocean);
 }
 
@@ -1021,9 +1028,14 @@ textarea {
 
   transition: background-color var(--transition-main),
     border var(--transition-main), fill var(--transition-main);
+
+  margin-right: 8px;
 }
 
 .modal__form__label-checkbox__icon {
+  fill: transparent;
+  cursor: pointer;
+  align-items: center;
 }
 
 .modal__form__label-checkbox__link {
