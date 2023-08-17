@@ -1003,7 +1003,7 @@ textarea {
   > .modal__form__label-checkbox__icon-wrapper {
   background-color: var(--ocean);
   border: none;
-  stroke: var(--cloud);
+  fill: var(--cloud);
 
   border-color: var(--ocean);
 }
